@@ -11,7 +11,7 @@ switch to the root of the naoth-2020 repo and run
 docker run -it -v $PWD:/code -w /code/NaoTHSoccer/Make/ ghcr.io/efcy/toolchain_linux:latest ./compile_linux_native.sh
 
 # for compiling for the robot:
-docker run -it -v $PWD:/code -w /code/NaoTHSoccer/Make/ ghcr.io/efcy/toolchain_linux:latest ./compile_linux_native.sh
+docker run -it -v $PWD:/code -w /code/NaoTHSoccer/Make/ ghcr.io/efcy/toolchain_linux:latest ./compileGame.sh
 ```
 
 ## Build the docker image yourself 
@@ -26,7 +26,7 @@ switch to the root of the naoth-2020 repo and run
 docker run -it -v $PWD:/code -w /code/NaoTHSoccer/Make/ toolchain_linux:latest ./compile_linux_native.sh
 
 # for compiling for the robot:
-docker run -it -v $PWD:/code -w /code/NaoTHSoccer/Make/ toolchain_linux:latest ./compile_linux_native.sh
+docker run -it -v $PWD:/code -w /code/NaoTHSoccer/Make/ toolchain_linux:latest ./compileGame.sh
 ```
 
 NOTE: The docker based approach only works if you dont have a `projectconfig.user.lua` in your `<naoth-2020>/NaoTHSoccer/Make` folder
